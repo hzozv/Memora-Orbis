@@ -49,7 +49,7 @@ function reset() {
     localStorage.clear();
 }
 
-
+/*
 // Prompts the user for their username when the website first loads and uses it to greet them
 function greet_msg() {
     if (username == "user") {
@@ -63,7 +63,7 @@ function greet_msg() {
     }
 }
 greet_msg()
-
+*/
 
 /*
 Changes the value and max of the progression bar and handles overflows.
