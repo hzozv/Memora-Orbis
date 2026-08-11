@@ -1,0 +1,54 @@
+<!--Complete Sync Data link in upper-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Account Settings">
+        <meta name="google-signin-client_id" content="************">
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        <link rel="stylesheet", href="../static/styles.css">
+    </head>
+    <body>
+        <!--Upper: Logo, Account Settings, Sync Data, Log Out-->
+        <div id="upper_section-account_settings">
+            <a id="logo-account_settings" href="index.html">
+                <img src="../static/revision-web-app-logo.png" alt="Revision Web App Logo" width="150">
+            </a>
+            <span id="upper_section_title-account_settings">Account Settings</span>
+           <p id="nav-account_settings"><a id="sync_data-account_settings" href="...">Sync Data</a> | <a id="log_out-account_settings" href="...">Log Out</a></p> 
+        </div>
+            
+        <!--Middle: Settings Option Label-->
+        
+        <div id="middle_section-account_settings">
+            <h1 id="settings_option-account_settings">Change Username:</h1h>
+        </div>
+
+        <!--Lower: Username, Password, Account, Flashcard Limit, Auto Sync-->
+        <div id="lower_section-account_settings">
+            <section id="buttons-account_settings">
+                <button id="change_username-account_settings">
+                    Change Username
+                </button>
+                <button id="flashcards_limit-account_settings">
+                    Flashcard Limit
+                </button>
+                <button id="import_data-account_settings">
+                    Import Data
+                </button>
+                <button id="export_data-account_settings">
+                    Export Data
+                </button>
+                <button id="auto_sync-account_settings">
+                    Auto Sync
+                </button>
+            </section>
+            <section id="inputs-account_settings">
+                <input type="text" id="input1-account_settings" placeholder="New Username">
+                <input type="text" id="input2-account_settings" placeholder="Current Password">
+                <button type="sumbit" id="update-account_settings">Update</button>
+            </section>
+        </div>
+        <script src="../static/account_settings.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Memora Orbis Dashboard">
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <body>
+        <!-- Upper: Logo, Dashboard, Account Settings -->
+        <div id="upper_section">
+            <a id="logo">
+                <img src="../static/revision-web-app-logo.png" alt="Revision Web App Logo" width="150">
+            </a>
+            <span id="upper_section_title">Dashboard</span>
+            <a id="account_settings" href="account_settings.html">
+                <img src="../static/account-settings-logo.png" alt="Account Settings" width="150">
+            </a>
+        </div>
+
+        <!-- Middle: Greeting Msg, Level, XP Progression Bar, Recommended Learning -->
+        <div id="middle_section">
+            <h1 id="welcome_msg">Welcome, user!</h1>
+            <label id="xp_label" for="xp_bar">
+                Level <span id="current_lvl">1</span> (XP: <span id="current_xp">0</span>/<span id="current_max_xp">20</span>), Total (XP: <span id="total_xp">0</span>)
+            </label>
+            <progress id="xp_bar" value="0" max="20" title="You need 20 more XP to reach Level 2!"></progress>
+            <h2 id="recommendation_msg">We recommend learning this next...</h2>
+            
+            <!--Not Completed Yet-->
+            <nav id="recommendations">
+                <a id="topic_1" href="...">Topic 1</a>
+                <a id="topic_2" href="...">Topic 2</a>
+                <a id="topic_3" href="...">Topic 3</a>
+                <a id="topic_4" href="...">Topic 4</a>
+                <a id="topic_5" href="...">Topic 5</a>
+                <a id="topic_6" href="...">Topic 6</a>
+            </nav>
+
+            <!--Here for testing purposes-->
+            <button id="recommendation">Recommendation (Placeholder)</button>
+            <button onclick="add_xp()">Add 6 XP! (Testing)</button>
+            <button onclick="reset()">Reset Local Storage (Testing)</button>
+            <button onclick="save()">Save to Local Storage (Testing)</button>
+
+        </div>
+
+        <!-- Bottom: Quick Navigation to different sections / functions e.g. quiz, flashcards... -->
+        <section id="lower_section">
+            <label id="flashcards_label" for="flashcards">
+                Flashcards
+            </label>
+            <a href="flashcards.html" id="flashcards" class="button">
+  <img src="../static/flashcards.png" alt="Flashcards Icon" width="150">
+</a>
+            <label id="quizzes_label" for="quizzes">
+                Quizzes
+            </label>
+            <a id="quizzes" class="button">
+                <img src="../static/quizzes.png" alt="Quizzes Icon" width="150">
+            </a>
+                
+            <label id="exams_label" for="exams">
+                Exams
+            </label>
+            <a id="exams" class="button">
+                <img src="../static/exams.png" alt="Exam Questions Icon" width="150">
+            </a>
+
+            <label id="notes_label" for="notes">
+                Notes
+            </label>
+            <a id="notes" class="button">
+                <img src="../static/notes.png" alt="Notes Icon" width="150">
+            </a>
+            ‎<br>
+            ‎<br>
+        </section>
+        
+        <script src="../static/script.js"></script>
+    </body>
+</html>

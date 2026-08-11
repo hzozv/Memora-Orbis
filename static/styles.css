@@ -1,0 +1,337 @@
+/* All */
+body {
+    margin: 0;
+    background-color: silver;
+    
+}
+
+a.button:hover {
+    transform: translateY(-4px);
+    border-bottom: 6px solid #007bff;
+}
+
+a img {
+    transition: filter 0.5s ease;
+}
+
+a img:hover {
+    filter: brightness(1.2);
+}
+
+button {
+    display: block;
+    background-color: rgb(0, 134, 182);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+#middle_section button {
+    all: revert;
+}
+
+/* Upper Section of .html pages */
+#upper_section, #upper_section-flashcards, #upper_section-account_settings {
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: #1EB4D2;
+    border: none;
+}
+
+#logo, #logo-flashcards, #logo-account_settings {
+    grid-column: 1;
+    justify-self: start;
+    margin-left: 40px;
+}
+
+#logo img, #logo-flashcards img, #logo-account_settings img {
+    transition: filter 0.5s ease;
+}
+
+#logo img:hover, #logo-flashcards img:hover, #logo-account_settings img:hover {
+    filter: brightness(1.1); 
+}
+
+#upper_section_title, #upper_section_title-flashcards, #upper_section_title-account_settings {
+    grid-column: 2;
+    text-align: center;
+    font-size: 5.3125rem;
+    font-weight: 700;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#account_settings, #account_settings-flashcards {
+    grid-column: 3;
+    justify-self: end;
+    margin-right: 40px;
+}
+
+#account_settings img, #account_settings-flashcards img {
+    transition: filter 0.5s ease;
+}
+
+#account_settings img:hover, #account_settings-flashcards img:hover {
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.3)); 
+    transform: translateY(-1px);
+}
+
+#nav-account_settings {
+    font-size: 1.5625rem;
+    grid-column: 3;
+    justify-self: end;
+    margin-right: 60px;
+}
+
+
+/* index.html */
+#middle_section {
+    height: 300px;
+    background-color: silver;
+    border: none;
+    padding: 40px;
+}
+
+#welcome_msg {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+#xp_bar {
+    width: 100%;
+    margin-left: 10px;
+}
+
+#recommendation_msg {
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+#recommendation {
+    margin-left: 10px;
+}
+
+#xp_label {
+    margin-left: 10px;
+}
+
+#recommendations {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    align-items: center;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    font-size: 1.25rem;
+}
+
+#topic_1 {
+    grid-column: 1;
+}
+
+#topic_2 {
+    grid-column: 2;
+}
+
+#topic_3 {
+    grid-column: 3;
+}
+
+#topic_4 {
+    grid-column: 4;
+}
+
+#topic_5 {
+    grid-column: 5;
+}
+
+#topic_6 {
+    grid-column: 6;
+}
+
+#lower_section {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;   
+}
+
+#flashcards_label {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+}
+
+#flashcards {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#quizzes_label {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px;
+}
+
+#quizzes {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#exams_label {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 10px;
+}
+
+#exams {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 30px;
+}
+
+#notes_label {
+    grid-column: 4;
+    grid-row: 1;
+    padding: 10px;
+}
+
+#notes {
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 30px;
+}
+
+/* flashcards.html */
+#middle_section_flashcards {
+    padding: 25px;
+    font-size: 2.81rem;
+}
+
+#redo_flashcards {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#undo_flashcards {
+    margin-left: 50px;
+    margin-right: 1070px;
+}
+
+#flashcards_amount_info {
+    display: inline;
+    
+}
+
+#new_flashcards_amount {
+    color: blue;
+}
+
+#wrong_flashcards_amount {
+    color: red;
+}
+
+#current_flashcards_amount {
+    color: green;
+}
+
+#lower_section_flashcards {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+#question-flashcards {
+    margin-bottom: 70px;   
+    font-size: 2rem;       
+    font-weight: bold;     
+    display: block;
+}
+
+#answer-flashcards {
+    margin-bottom: 110px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 1000px;
+    display: block;
+}
+
+/* account_settings.html */
+#settings_option-account_settings {
+    font-size: 3.4375rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 55px;
+}
+
+#lower_section-account_settings {
+    margin-left: 55px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#lower_section-account_settings button {
+    width: 275px;
+}
+
+#buttons-account_settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 385px;
+}
+
+#lower_section-account_settings input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 75px;
+    max-width: 1000px; 
+    width: 100%;
+}
+
+#inputs-account_settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    flex-grow: 1;
+}
+
+/* start.html */
+#sign_in-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;     
+    gap: 5.5px;
+    margin: 0;
+}
+
+
+#slogun-start {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}

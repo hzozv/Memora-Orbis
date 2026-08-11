@@ -1,0 +1,39 @@
+<!--Complete input field and rating system-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description", content="Flashcards">
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <body>
+        <!-- Upper: Logo, Flashcards, Account Settings -->
+        <div id="upper_section-flashcards">
+            <a id="logo-flashcards" href="index.html">
+                <img src="../static/revision-web-app-logo.png" alt="Revision Web App Logo" width="150">
+            </a>
+            <span id="upper_section_title-flashcards">Flashcards</span>
+            <a id="account_settings-flashcards" href="account_settings.html">
+                <img src="../static/account-settings-logo.png" alt="Account Settings" width="150">
+            </a>
+        </div>
+            
+        <!-- Undo, Redo, No. of Cards-->
+        <div id="middle_section_flashcards">
+            <a class="button" id="redo_flashcards">←</a>
+            <a class="button" id="undo_flashcards">→</a>
+            <p id="flashcards_amount_info"> <span id="new_flashcards_amount">x</span> + <span id="wrong_flashcards_amount">y</span> + <span id="current_flashcards_amount">z</span></p>        
+        </div>
+
+        <!--Question, Answer, Show Answer-->
+        <div id="lower_section_flashcards">
+            <form>
+                <label id="question-flashcards" for="answer-flashcards">
+                    Question
+                </label>
+                <input type="text" id="answer-flashcards" placeholder="Answer">
+            </form>
+            <button id="show_answer-flashcards">Show Answer</button>
+        </div>
+    </body>
+</html>
