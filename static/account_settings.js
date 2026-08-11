@@ -16,5 +16,5 @@ document.getElementById("log_out-account_settings").addEventListener("click", (e
   localStorage.clear();
 
   // Redirect the user
-  window.location.href = "/start.html";
+  window.location.href = "/index.html";
 });
