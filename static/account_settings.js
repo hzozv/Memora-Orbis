@@ -1,5 +1,5 @@
 if (localStorage.getItem("is_logged_in") !== "true") {
-  window.location.href = "../start.html";
+  window.location.href = "../index.html";
 }
 
 // Log Out
