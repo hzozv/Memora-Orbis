@@ -31,7 +31,7 @@ function handleCredentialResponse(response) {
   localStorage.setItem("is_logged_in", "true");
 
   //Redirect to index.html
-  window.location.href = "..templates/index.html";
+  window.location.href = "templates/index.html";
 }
 
 // Decode Google JWT token
