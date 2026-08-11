@@ -27,6 +27,9 @@ function handleCredentialResponse(response) {
   // Store email for revoke logout to call later
   localStorage.setItem("user_email", responsePayload.email);
 
+  // Store username to be displayed in ../templates/index.html
+  localStorage.setItem("username", responsePayload.name);
+
   // Mark user as logged in
   localStorage.setItem("is_logged_in", "true");
 
