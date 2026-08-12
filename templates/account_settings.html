@@ -1,4 +1,3 @@
-<!--Complete Sync Data link in upper-->
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
@@ -15,13 +14,13 @@
                 <img src="../static/revision-web-app-logo.png" alt="Revision Web App Logo" width="150">
             </a>
             <span id="upper_section_title-account_settings">Account Settings</span>
-           <p id="nav-account_settings"><a id="sync_data-account_settings" href="...">Sync Data</a> | <a id="log_out-account_settings" href="...">Log Out</a></p> 
+           <p id="nav-account_settings"><a id="sync_data-account_settings" href="#" role="button" onclick="saveToDrive(); return false;">Sync Data</a> | <a id="log_out-account_settings" href="#" onclick="return false;" role="button">Log Out</a></p> 
         </div>
             
         <!--Middle: Settings Option Label-->
         
         <div id="middle_section-account_settings">
-            <h1 id="settings_option-account_settings">Change Username:</h1h>
+            <h1 id="settings_option-account_settings">Change Username:</h1>
         </div>
 
         <!--Lower: Username, Password, Account, Flashcard Limit, Auto Sync-->
@@ -46,7 +45,7 @@
             <section id="inputs-account_settings">
                 <input type="text" id="input1-account_settings" placeholder="New Username">
                 <input type="text" id="input2-account_settings" placeholder="Current Password">
-                <button type="sumbit" id="update-account_settings">Update</button>
+                <button type="submit" id="update-account_settings">Update</button>
             </section>
         </div>
         <script src="../static/account_settings.js"></script>
