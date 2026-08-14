@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="description" content="Account Settings">
         <meta name="google-signin-client_id" content="************">
-        <script src="https://accounts.google.com/gsi/client" async defer></script>
         <link rel="stylesheet", href="../static/styles.css">
+        <script src="https://accounts.google.com/gsi/client" async defer onload="initializeDriveSync()"></script>
     </head>
     <body>
         <!--Upper: Logo, Account Settings, Sync Data, Log Out-->
@@ -32,7 +32,7 @@
                 <button id="flashcards_limit-account_settings">
                     Flashcard Limit
                 </button>
-                <button id="import_data-account_settings">
+                <button id="import_data-account_settings" onclick="loadFromDrive()">
                     Import Data
                 </button>
                 <button id="export_data-account_settings">
@@ -48,6 +48,7 @@
                 <button type="submit" id="update-account_settings">Update</button>
             </section>
         </div>
+        
         <script src="../static/account_settings.js"></script>
     </body>
 </html>
