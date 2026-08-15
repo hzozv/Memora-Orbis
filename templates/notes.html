@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Memora Orbis Notes Page">
+        <link rel="stylesheet", href="../static/styles.css">
+    </head>
+    <body>
+        <!-- Upper: Logo, Notes, Create-->
+        <div id="upper_section-notes">
+            <a id="logo-notes" href="index.html">
+                <img src="../static/revision-web-app-logo.png" alt="Revision Web App Logo" width="150">
+            </a>
+            <span id="upper_section_title-notes">Notes</span>
+            <a id="plus-notes" onclick="openPopUp('pop_up-notes')">
+                <img src="../static/plus.png" alt="Create new item" width="150">
+            </a>
+        </div>
+        
+        <!-- Pop-UP: Instructions, input, submit -->
+        <div id="pop_up-notes">
+            <div id="pop_up_container-notes">
+                <h1>Automatic Notes Generation</h1>
+                <form id="form-notes">
+                    <input required placeholder="Topic">
+                    <input required placeholder="Exam Board">
+                    <input placeholder="Information">
+                    <button type="submit">Submit</button>
+                </form>
+                <span id="pop_up_cancel-notes" onclick="closePopUp('pop_up-notes')">&times;</span>
+            </div>
+        </div> 
+        
+        
+        <script src="../static/notes.js"></script>
+    </body>
+</html>
